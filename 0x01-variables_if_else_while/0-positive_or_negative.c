@@ -2,9 +2,10 @@
 #include <time.h>
 #include <stdio.h>
 
-/* main - Determines if a number is positive, nagative or zero
+/**
+ * main - Entry point for the program
  *
- * Return: Always 0 (Success) 
+ * Return: 0 on success
  */
 int main(void)
 {
@@ -15,11 +16,16 @@ int main(void)
 
     printf("%d ", n);
 
-    if (n > 0) {
+    if (n > 0)
+    {
         printf("is positive\n");
-    } else if (n == 0) {
+    }
+    else if (n == 0)
+    {
         printf("is zero\n");
-    } else {
+    }
+    else
+    {
         printf("is negative\n");
     }
 

@@ -1,22 +1,19 @@
-#include <unistd.h>
+#include <stdio.h>
 
 /**
- * main - Entry point
+ * main - Prints all single digit numbers of base 10 starting from 0
  *
- * Description: prints all single digit numbers of base 10 starting from 0
- * Return: Always 0 (Success)
+ * Return: 0
  */
 int main(void)
 {
-	int i = 0;
+        int i;
 
-	while (i < 10)
-	{
-		char c = i + '0';
-		write(1, &c, 1);
-		i++;
-	}
-	write(1, "\n", 1);
-	return (0);
+        for (i = 0; i < 10; i++)
+        {
+                printf("%d\n", i);
+        }
+
+        return (0);
 }
 

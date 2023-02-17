@@ -5,27 +5,30 @@
 /**
  * main - Entry point for the program
  *
- * Return: Always 0 (Success)
+ * Return: 0 on success
  */
 int main(void)
 {
-    int n;
+	int n;
 
-    srand(time(0));
-    n = rand() - RAND_MAX / 2;
-    if (n > 0)
-    {
-        printf("%d is positive\n");
-    }
-    else if (n == 0)
-    {
-        printf("%d is zero\n");
-    }
-    else
-    {
-        printf("%d is negative\n");
-    }
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
 
-    return (0);
+	printf("%d ", n);
+
+	if (n > 0)
+	{
+		printf("is positive\n");
+	}
+	else if (n == 0)
+	{
+		printf("is zero\n");
+	}
+	else
+	{
+		printf("is negative\n");
+	}
+
+	return (0);
 }
 

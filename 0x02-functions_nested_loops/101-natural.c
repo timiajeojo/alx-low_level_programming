@@ -1,5 +1,6 @@
 #include "main.h"
 /*
+         *  main - check the code. 
 	 * File: 101-natural.c
 	 * Auth: vincent kip
 	 */
